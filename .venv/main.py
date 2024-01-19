@@ -8,9 +8,8 @@ async def main():
     # Now you can use all client methods listed below, like for example...
     # await client.send_message('me', 'Hello to myself!')
 
-    readUser= config.READUSER
-
     # Get information about the User you are reading the message from
+    readUser= config.READUSER
     entity = await client.get_entity(readUser)
 
     # Print the chat ID
